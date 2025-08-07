@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const navigate = useNavigate();
 
   // Handle window resize
@@ -34,22 +35,45 @@ export default function Header() {
   }, [showMobileMenu]);
 
   const toggleMobileMenu = () => {
+    if (isAnimating) return;
+    
+    setIsAnimating(true);
     setShowMobileMenu(!showMobileMenu);
+    
+    // Reset animation lock after animation completes
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 600);
   };
 
   const closeMobileMenu = () => {
+    if (isAnimating) return;
+    
+    setIsAnimating(true);
     setShowMobileMenu(false);
+    
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 600);
   };
 
   const handleLogoClick = () => {
     navigate('/');
-    setShowMobileMenu(false);
+    closeMobileMenu();
   };
 
   const handleBackdropClick = (e) => {
     if (e.target.classList.contains('mobile-menu-backdrop')) {
       closeMobileMenu();
     }
+  };
+
+  const handleMenuItemClick = (callback) => {
+    // Add small delay for ripple effect
+    setTimeout(() => {
+      callback();
+      closeMobileMenu();
+    }, 150);
   };
 
   return (
@@ -60,10 +84,20 @@ export default function Header() {
         </div>
         <div className="header-link">
           {isMobile ? (
-            <i 
+            <button 
               onClick={toggleMobileMenu} 
-              className={`fa-solid ${showMobileMenu ? 'fa-times' : 'fa-bars'} mobile-menu-icon`}
-            ></i>
+              className={`hamburger-menu ${showMobileMenu ? 'active' : ''}`}
+              aria-label={showMobileMenu ? 'Close menu' : 'Open menu'}
+              aria-expanded={showMobileMenu}
+            >
+              <div className="hamburger-box">
+                <div className="hamburger-inner">
+                  <span className="bar bar1"></span>
+                  <span className="bar bar2"></span>
+                  <span className="bar bar3"></span>
+                </div>
+              </div>
+            </button>
           ) : (
             <ul className="desktop-nav">
               <li>
@@ -97,37 +131,114 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      {isMobile && showMobileMenu && (
-        <div className="mobile-menu-backdrop" onClick={handleBackdropClick}>
+      {isMobile && (
+        <div className={`mobile-menu-backdrop ${showMobileMenu ? 'show' : ''}`} onClick={handleBackdropClick}>
           <div className={`mobile-menu ${showMobileMenu ? 'mobile-menu-open' : ''}`}>
             <div className="mobile-menu-header">
-              <h3>Menu</h3>
-              <button onClick={closeMobileMenu} className="close-btn">
-                <i className="fa-solid fa-times"></i>
+              <div className="menu-title">
+                <h3>Navigation</h3>
+                <div className="menu-indicator"></div>
+              </div>
+              <button onClick={closeMobileMenu} className="close-btn" aria-label="Close menu">
+                <div className="close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
               </button>
             </div>
             <nav className="mobile-menu-nav">
-              <Link to="/" className="mobile-menu-item" onClick={closeMobileMenu}>
-                <i className="fa-solid fa-home"></i>
-                <span>Home</span>
-              </Link>
-              <Link to="/services" className="mobile-menu-item" onClick={closeMobileMenu}>
-                <i className="fa-solid fa-spa"></i>
-                <span>Services</span>
-              </Link>
-              <Link to="/locations" className="mobile-menu-item" onClick={closeMobileMenu}>
-                <i className="fa-solid fa-map-marker-alt"></i>
-                <span>Locations</span>
-              </Link>
-              <Link to="/about-us" className="mobile-menu-item" onClick={closeMobileMenu}>
-                <i className="fa-solid fa-info-circle"></i>
-                <span>About Us</span>
-              </Link>
-              <Link to="/contact-us" className="mobile-menu-item" onClick={closeMobileMenu}>
-                <i className="fa-solid fa-phone"></i>
-                <span>Contact Us</span>
-              </Link>
+              <div 
+                className="mobile-menu-item" 
+                style={{'--delay': '0.1s'}}
+                onClick={() => handleMenuItemClick(() => navigate('/'))}
+              >
+                <div className="menu-item-content">
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-home"></i>
+                  </div>
+                  <span>Home</span>
+                  <div className="menu-arrow">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+                <div className="ripple"></div>
+              </div>
+              
+              <div 
+                className="mobile-menu-item" 
+                style={{'--delay': '0.15s'}}
+                onClick={() => handleMenuItemClick(() => navigate('/services'))}
+              >
+                <div className="menu-item-content">
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-spa"></i>
+                  </div>
+                  <span>Services</span>
+                  <div className="menu-arrow">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+                <div className="ripple"></div>
+              </div>
+              
+              <div 
+                className="mobile-menu-item" 
+                style={{'--delay': '0.2s'}}
+                onClick={() => handleMenuItemClick(() => navigate('/locations'))}
+              >
+                <div className="menu-item-content">
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-map-marker-alt"></i>
+                  </div>
+                  <span>Locations</span>
+                  <div className="menu-arrow">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+                <div className="ripple"></div>
+              </div>
+              
+              <div 
+                className="mobile-menu-item" 
+                style={{'--delay': '0.25s'}}
+                onClick={() => handleMenuItemClick(() => navigate('/about-us'))}
+              >
+                <div className="menu-item-content">
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-info-circle"></i>
+                  </div>
+                  <span>About Us</span>
+                  <div className="menu-arrow">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+                <div className="ripple"></div>
+              </div>
+              
+              <div 
+                className="mobile-menu-item" 
+                style={{'--delay': '0.3s'}}
+                onClick={() => handleMenuItemClick(() => navigate('/contact-us'))}
+              >
+                <div className="menu-item-content">
+                  <div className="menu-icon">
+                    <i className="fa-solid fa-phone"></i>
+                  </div>
+                  <span>Contact Us</span>
+                  <div className="menu-arrow">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+                <div className="ripple"></div>
+              </div>
             </nav>
+            
+            <div className="menu-footer">
+              <div className="menu-footer-content">
+                <p>Premium Spa Experience</p>
+                <div className="menu-decorative-line"></div>
+              </div>
+            </div>
           </div>
         </div>
       )}
