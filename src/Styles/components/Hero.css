@@ -1,0 +1,385 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-img img,
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75) contrast(1.15) saturate(1.3) hue-rotate(5deg);
+    transition: filter 0.3s ease;
+}
+
+.hero-video.loaded {
+    opacity: 1;
+    animation: videoFadeIn 1s ease-in;
+}
+
+.hero-fallback-img.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hero-fallback-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75) contrast(1.15) saturate(1.3) hue-rotate(5deg);
+    transition: opacity 0.5s ease;
+}
+
+@keyframes videoFadeIn {
+    from {
+        opacity: 0.5;
+        filter: brightness(0.6) contrast(1.15) saturate(1.3) hue-rotate(5deg);
+    }
+    to {
+        opacity: 1;
+        filter: brightness(0.75) contrast(1.15) saturate(1.3) hue-rotate(5deg);
+    }
+}
+
+/* Overlay gradient for better text contrast - Made lighter */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.1) 30%,
+        rgba(0, 0, 0, 0.05) 60%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 2rem;
+}
+
+.hero-text .txt-1 {
+    color: white;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 
+                 0 0 20px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    animation: slideInFromTop 1s ease-out;
+}
+
+.hero-text .txt-2 {
+    color: white;
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 
+                 0 0 15px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    animation: slideInFromTop 1s ease-out 0.2s both;
+}
+
+.hero-text .txt-3 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    margin-bottom: 3rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9), 
+                 0 0 10px rgba(0, 0, 0, 0.4);
+    line-height: 1.4;
+    max-width: 800px;
+    animation: slideInFromTop 1s ease-out 0.4s both;
+}
+
+.hero-text .route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: slideInFromBottom 1s ease-out 0.6s both;
+}
+
+.hero-text .route h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 
+                 0 0 15px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.h2-txt {
+    color: #ff4444 !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 
+                 0 0 15px rgba(255, 68, 68, 0.3);
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem 2.5rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4), 
+                0 4px 15px rgba(0, 0, 0, 0.3);
+    border-color: white;
+}
+
+.cta-button:active {
+    transform: translateY(-1px);
+}
+
+.cta-button i {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateX(3px);
+}
+
+/* Animations */
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .hero-text {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .hero-text .txt-3 {
+        margin-bottom: 2.5rem;
+    }
+    
+    .hero-text .route {
+        gap: 1.8rem;
+    }
+    
+    .cta-button {
+        padding: 1rem 2.2rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero-img img,
+    .hero-video {
+        filter: brightness(0.8) contrast(1.2) saturate(1.4);
+    }
+    
+    .hero-text {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    .hero-text .txt-1 {
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-text .txt-2 {
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-text .txt-3 {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-text .route {
+        gap: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero-text {
+        width: 95%;
+        padding: 0.5rem;
+    }
+    
+    .hero-text .txt-3 {
+        padding: 0 0.5rem;
+        line-height: 1.3;
+        margin-bottom: 1.8rem;
+    }
+    
+    .hero-text .route {
+        gap: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .cta-button i {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero-text .txt-1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+    
+    .hero-text .txt-2 {
+        font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    }
+    
+    .hero-text .txt-3 {
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-text .route {
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        padding: 0.7rem 1.5rem;
+    }
+}
+
+/* For better video quality on high-resolution screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-img img,
+    .hero-video {
+        filter: brightness(0.8) contrast(1.2) saturate(1.4) sharpen(1.1);
+    }
+}
+
+/* High contrast mode - Keep video brighter */
+@media (prefers-contrast: high) {
+    .hero-img img,
+    .hero-video {
+        filter: brightness(0.85) contrast(1.4) saturate(1.2);
+    }
+    
+    .hero-overlay {
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .hero-text .txt-1,
+    .hero-text .txt-2,
+    .hero-text .txt-3,
+    .hero-text .route {
+        animation: none;
+    }
+    
+    .cta-button {
+        transition: none;
+    }
+    
+    .hero-video {
+        animation: none;
+    }
+}
