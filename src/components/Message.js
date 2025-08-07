@@ -34,10 +34,11 @@ export default function Message() {
           health and wellness.
         </p>
         <h2 className='msg-2'>Timings: 10AM – 11PM</h2>
-        <a href="#">DISCOVER MORE</a>
+        <button type="button" className="discover-more-btn">DISCOVER MORE</button>
       </div>
       <div className='msg-img'>
-        <img src="/images/interior.jpg" />
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+        <img src="/images/interior.jpg" alt="Spa interior" />
       </div>
     </div>
   );
