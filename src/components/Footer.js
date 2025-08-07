@@ -19,19 +19,49 @@ export default function Footer() {
             Our expert therapists provide authentic massage treatments that heal both body and mind.
           </p>
           <div className="footer-social">
-            <a href="#" className="social-link" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/"
+              className="social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="social-link" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/"
+              className="social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="social-link" aria-label="Twitter">
+            <a
+              href="https://twitter.com/"
+              className="social-link"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" className="social-link" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/"
+              className="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" className="social-link" aria-label="WhatsApp">
+            <a
+              href="https://wa.me/"
+              className="social-link"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>
