@@ -52,7 +52,7 @@ export default function Award() {
 
       {/* Services for Men and Women */}
       <div className="services-gender">
-        <div className="service-card women-service">
+        <div className="service-cards women-service">
           <div className="service-overlay">
             <div className="service-content">
               <h3>Massage for Men & Women</h3>
@@ -70,7 +70,7 @@ export default function Award() {
           <img className="men" src="/images/men.jpg" alt="Massage services for men" />
         </div>
 
-        <div className="service-card men-service">
+        <div className="service-cards men-service">
           <div className="service-overlay">
             <div className="service-content">
               <h3>Massage for Couple</h3>

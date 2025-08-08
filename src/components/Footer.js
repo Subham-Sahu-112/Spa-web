@@ -21,7 +21,7 @@ export default function Footer() {
           </p>
           <div className="footer-social">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61578791464526"
               className="social-link"
               aria-label="Facebook"
               target="_blank"
@@ -30,7 +30,7 @@ export default function Footer() {
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/wishahspa_/"
               className="social-link"
               aria-label="Instagram"
               target="_blank"
@@ -39,25 +39,17 @@ export default function Footer() {
               <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="https://twitter.com/"
+              href="https://www.snapchat.com/add/wishahspa1?share_id=Wl2Q0fyXYMo&locale=en-IN"
               className="social-link"
               aria-label="Twitter"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter"></i>
+             <i class="fa-brands fa-snapchat"></i>
             </a>
+            
             <a
-              href="https://www.linkedin.com/"
-              className="social-link"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://wa.me/"
+              href="https://wa.me/971556106417"
               className="social-link"
               aria-label="WhatsApp"
               target="_blank"
@@ -196,7 +188,7 @@ export default function Footer() {
                 <p>
                   <strong>Hours</strong>
                 </p>
-                <p>24 / 7 &nbsp;&nbsp;Daily</p>
+                <p>24 / 7 </p>
               </div>
             </div>
           </div>
