@@ -99,6 +99,7 @@
     width: 100%;
     box-sizing: border-box;
     margin: 0;
+    margin-top: -10rem;
     /* Remove the problematic negative margin */
 }
 

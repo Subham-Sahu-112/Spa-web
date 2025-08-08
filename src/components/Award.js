@@ -70,7 +70,7 @@ export default function Award() {
           <img className="men" src="/images/men.jpg" alt="Massage services for men" />
         </div>
 
-        <div className="service-cards men-service">
+        <div className="service-cards service-cards-2 men-service">
           <div className="service-overlay">
             <div className="service-content">
               <h3>Massage for Couple</h3>
@@ -84,7 +84,7 @@ export default function Award() {
               </Link>
             </div>
           </div>
-          <img src="/images/men.jpg" alt="Massage services for men" />
+          <img className="couple" src="/images/Couple.jpg" alt="Massage services for men" />
         </div>
       </div>
     </section>
