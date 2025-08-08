@@ -4,8 +4,8 @@ export default function Staffs() {
   const staffMembers = [
     { image: "/images/Indonesian.jpg", nationality: "Indonesian", speciality: "Traditional Massage" },
     { image: "/images/phillipines.jpg", nationality: "Philippines", speciality: "Deep Tissue Massage" },
-    { image: "/images/Vietnam.jpg", nationality: "Vietnam", speciality: "Aromatherapy" },
-    { image: "/images/Malesian.jpg", nationality: "Malaysian", speciality: "Hot Stone Therapy" },
+    { image: "/images/Vietnam.jpeg", nationality: "Vietnam", speciality: "Aromatherapy" },
+    { image: "/images/Malesiyan.webp", nationality: "Malaysian", speciality: "Hot Stone Therapy" },
     { image: "/images/Indian.jpg", nationality: "Indian", speciality: "Ayurvedic Massage" },
     { image: "/images/Thai.jpg", nationality: "Thai", speciality: "Thai Traditional Massage" },
     { image: "/images/moroccan.jpg", nationality: "Moroccan", speciality: "Moroccan Bath" },
@@ -38,7 +38,6 @@ export default function Staffs() {
               </div>
               <div className="staff-details">
                 <h3>{staff.nationality} Therapist</h3>
-                <span className="staff-specialty">{staff.speciality}</span>
               </div>
             </div>
           ))}
