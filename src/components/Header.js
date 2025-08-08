@@ -131,8 +131,6 @@ export default function Header() {
           <div className={`mobile-menu ${showMobileMenu ? 'mobile-menu-open' : ''}`}>
             <div className="mobile-menu-header">
               <div className="menu-title">
-                <h3>Navigation</h3>
-                <div className="menu-indicator"></div>
               </div>
               <button onClick={closeMobileMenu} className="close-btn" aria-label="Close menu">
                 <div className="close-icon">

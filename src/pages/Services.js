@@ -267,22 +267,6 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Category Filter */}
-          <div className="category-filter">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                className={`filter-btn ${
-                  activeCategory === category.id ? "active" : ""
-                }`}
-                onClick={() => setActiveCategory(category.id)}
-              >
-                {category.name}
-                <span className="count">({category.count})</span>
-              </button>
-            ))}
-          </div>
-
           {/* Services Grid */}
           <div className="services-grid">
             {filteredServices.map((service) => (
@@ -303,7 +287,6 @@ export default function Services() {
                 <div className="card-content">
                   <div className="card-header">
                     <h3>{service.name}</h3>
-                    <span className="category-badge">{service.category}</span>
                   </div>
                   <p className="description">{service.description}</p>
                   <Link to="/contact-us" className="book-btn">

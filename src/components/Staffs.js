@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../Styles/components/Staffs.css'
 
 export default function Staffs() {
@@ -46,10 +47,10 @@ export default function Staffs() {
         <div className="staff-cta">
           <h3>Book Your Preferred Therapist</h3>
           <p>Experience authentic treatments from our skilled international team</p>
-          <a href="/contact-us" className="book-therapist-btn">
+          <Link to="/contact-us" className="book-therapist-btn">
             Book Appointment
             <i className="fas fa-calendar-alt"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

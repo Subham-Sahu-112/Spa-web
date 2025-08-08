@@ -179,7 +179,7 @@ export default function Footer() {
                 <p>
                   <strong>Email</strong>
                 </p>
-                <p>info@wishahspa1.com</p>
+                <p>wishahspa1@gmail.com</p>
               </div>
             </div>
             <div className="contact-item">
