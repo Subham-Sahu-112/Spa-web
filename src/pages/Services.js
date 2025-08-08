@@ -306,16 +306,6 @@ export default function Services() {
                     <span className="category-badge">{service.category}</span>
                   </div>
                   <p className="description">{service.description}</p>
-                  <div className="card-details">
-                    <div className="detail">
-                      <i className="fas fa-clock"></i>
-                      <span>{service.duration}</span>
-                    </div>
-                    <div className="detail price">
-                      <i className="fas fa-tag"></i>
-                      <span>{service.price}</span>
-                    </div>
-                  </div>
                   <Link to="/contact-us" className="book-btn">
                     <i className="fas fa-calendar-alt"></i>
                     Book Now

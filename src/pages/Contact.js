@@ -194,7 +194,7 @@ export default function Contact() {
                   </div>
                   <div className="location-details">
                     <span className="location-name">Dubai Branch</span>
-                    <span className="location-address">The Metropolis Tower<br />Ground Floor, Shop No - 6</span>
+                    <span className="location-address">SHOP #6. GROUND FLOOR,<br/>THE METROPOLIS TOWER,<br/>NEAR BURJ KHALIFA,<br/>BUSINESS DAY, DOWNTOWN DUBAI</span>
                   </div>
                 </div>
               </div>
@@ -211,8 +211,8 @@ export default function Contact() {
               
               <div className="hours-info">
                 <div className="hours-item">
-                  <span className="day">Monday - Sunday</span>
-                  <span className="time">10:00 AM - 11:00 PM</span>
+                  <span className="day">24 / 7 Daily</span>
+                  {/* <span className="time">10:00 AM - 11:00 PM</span> */}
                 </div>
                 <div className="hours-note">
                   <i className="fas fa-info-circle"></i>
@@ -273,7 +273,7 @@ export default function Contact() {
                     <div className="form-group">
                       <label htmlFor="phone">Phone Number *</label>
                       <input
-                        type="tel"
+                        type="number"
                         id="phone"
                         name="phone"
                         value={formData.phone}

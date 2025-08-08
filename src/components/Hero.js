@@ -83,7 +83,7 @@ export default function Hero() {
       </div>
       
       <div className="hero-text">
-        <h1 className="txt-1" data-aos="fade-up">Wishash Spa</h1>
+        <h1 className="txt-1" data-aos="fade-up">Wishah Spa</h1>
         <h1 className="txt-2" data-aos="fade-up" data-aos-delay="200">Now Open in Dubai</h1>
         <h1 className="txt-3" data-aos="fade-up" data-aos-delay="400">
           The Metropolis Tower - Ground Floor, Shop No - 6

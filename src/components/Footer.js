@@ -15,8 +15,9 @@ export default function Footer() {
           </div>
           <h2 className="footer-title">Wishash Spa</h2>
           <p className="footer-description">
-            Experience the ultimate relaxation and wellness at Dubai's premier spa.
-            Our expert therapists provide authentic massage treatments that heal both body and mind.
+            Experience the ultimate relaxation and wellness at Dubai's premier
+            spa. Our expert therapists provide authentic massage treatments that
+            heal both body and mind.
           </p>
           <div className="footer-social">
             <a
@@ -71,12 +72,18 @@ export default function Footer() {
         <div className="footer-column">
           <h3>Quick Links</h3>
           <ul className="footer-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about-us">About Us</Link></li>
-            <li><Link to="/services">Our Services</Link></li>
-            <li><Link to="/locations">Locations</Link></li>
-            <li><Link to="/contact-us">Contact Us</Link></li>
-            <li><a href="#testimonials">Reviews</a></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about-us">About Us</Link>
+            </li>
+            <li>
+              <Link to="/services">Our Services</Link>
+            </li>
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
           </ul>
         </div>
 
@@ -84,12 +91,36 @@ export default function Footer() {
         <div className="footer-column">
           <h3>Popular Treatments</h3>
           <ul className="footer-links">
-            <li><a href="#services">Aromatherapy Treatment</a></li>
-            <li><a href="#services">Hot Oil Massage</a></li>
-            <li><a href="#services">Full Body Massage</a></li>
-            <li><a href="#services">Deep Tissue Massage</a></li>
-            <li><a href="#services">Thai Massage</a></li>
-            <li><a href="#services">Couple Massage</a></li>
+            <li>
+              <Link to="/services">
+                Aromatherapy Treatment
+              </Link>
+            </li>
+            <li>
+              <Link to="/services">
+                Hot Oil Massage
+              </Link>
+            </li>
+            <li>
+              <Link to="/services">
+                Full Body Massage
+              </Link>
+            </li>
+            <li>
+              <Link to="/services">
+                Deep Tissue Massage
+              </Link>
+            </li>
+            <li>
+              <Link to="/services">
+                Thai Massage
+              </Link>
+            </li>
+            <li>
+              <Link to="/services">
+                Couple Massage
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -97,12 +128,24 @@ export default function Footer() {
         <div className="footer-column">
           <h3>Signature Services</h3>
           <ul className="footer-links">
-            <li><a href="#services">Four Hands Massage</a></li>
-            <li><a href="#services">Moroccan Bath</a></li>
-            <li><a href="#services">Jacuzzi Bath</a></li>
-            <li><a href="#services">Reflexology</a></li>
-            <li><a href="#services">Sports Massage</a></li>
-            <li><a href="#services">Prenatal Massage</a></li>
+            <li>
+              <Link to="/services">Four Hands Massage</Link>
+            </li>
+            <li>
+              <Link to="/services">Moroccan Bath</Link>
+            </li>
+            <li>
+              <Link to="/services">Jacuzzi Bath</Link>
+            </li>
+            <li>
+              <Link to="/services">Reflexology</Link>
+            </li>
+            <li>
+              <Link to="/services">Sports Massage</Link>
+            </li>
+            <li>
+              <Link to="/services">Prenatal Massage</Link>
+            </li>
           </ul>
         </div>
 
@@ -113,29 +156,47 @@ export default function Footer() {
             <div className="contact-item">
               <i className="fas fa-map-marker-alt"></i>
               <div>
-                <p><strong>Dubai Location</strong></p>
-                <p>The Metropolis Tower<br />Ground Floor, Shop No - 6</p>
+                <p>
+                  <strong>Dubai Location</strong>
+                </p>
+                <p>
+                  SHOP #6. GROUND FLOOR,
+                  <br />
+                  THE METROPOLIS TOWER,
+                  <br />
+                  NEAR BURJ KHALIFA,
+                  <br />
+                  BUSINESS DAY,
+                  <br />
+                  DOWNTOWN DUBAI
+                </p>
               </div>
             </div>
             <div className="contact-item">
               <i className="fas fa-phone"></i>
               <div>
-                <p><strong>Call Us</strong></p>
-                <p>+971-XX-XXX-XXXX</p>
+                <p>
+                  <strong>Call Us</strong>
+                </p>
+                <p>+971 55610 6417</p>
               </div>
             </div>
             <div className="contact-item">
               <i className="fas fa-envelope"></i>
               <div>
-                <p><strong>Email</strong></p>
-                <p>info@wishashspa.com</p>
+                <p>
+                  <strong>Email</strong>
+                </p>
+                <p>info@wishahspa1.com</p>
               </div>
             </div>
             <div className="contact-item">
               <i className="fas fa-clock"></i>
               <div>
-                <p><strong>Hours</strong></p>
-                <p>10:00 AM - 11:00 PM<br />Daily</p>
+                <p>
+                  <strong>Hours</strong>
+                </p>
+                <p>24 / 7 &nbsp;&nbsp;Daily</p>
               </div>
             </div>
           </div>

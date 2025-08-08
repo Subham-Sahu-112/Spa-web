@@ -260,7 +260,7 @@
 
 .hours-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   background: rgba(240, 193, 75, 0.05);
@@ -625,7 +625,7 @@
 
 @media (max-width: 480px) {
   .contact-hero {
-    padding: 4rem 0.5rem 2rem;
+    padding: 7rem 0.5rem 2rem;
   }
   
   .contact-main {

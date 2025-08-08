@@ -3,7 +3,7 @@ import Discount from "../components/Staffs";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Location from "../components/Location";
+// import Location from "../components/Location";
 import Message from "../components/Message";
 import '../Styles/components/Header.css'
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Message />
       <Award />
       <Discount />
-      <Location />
+      {/* <Location /> */}
       <Footer />
     </>
   );

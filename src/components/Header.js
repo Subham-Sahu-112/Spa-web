@@ -111,11 +111,6 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/locations" className="li">
-                  Locations
-                </Link>
-              </li>
-              <li>
                 <Link to="/about-us" className="li">
                   About Us
                 </Link>
@@ -174,23 +169,6 @@ export default function Header() {
                     <i className="fa-solid fa-spa"></i>
                   </div>
                   <span>Services</span>
-                  <div className="menu-arrow">
-                    <i className="fa-solid fa-chevron-right"></i>
-                  </div>
-                </div>
-                <div className="ripple"></div>
-              </div>
-              
-              <div 
-                className="mobile-menu-item" 
-                style={{'--delay': '0.2s'}}
-                onClick={() => handleMenuItemClick(() => navigate('/locations'))}
-              >
-                <div className="menu-item-content">
-                  <div className="menu-icon">
-                    <i className="fa-solid fa-map-marker-alt"></i>
-                  </div>
-                  <span>Locations</span>
                   <div className="menu-arrow">
                     <i className="fa-solid fa-chevron-right"></i>
                   </div>
