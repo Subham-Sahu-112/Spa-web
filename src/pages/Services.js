@@ -152,6 +152,22 @@ export default function Services() {
         "Improved sleep",
       ],
     },
+    {
+      id: 10,
+      name: "Shaving",
+      category: "wellness",
+      image: "/images/spa9.jpg",
+      duration: "90 mins",
+      price: "From AED 190",
+      description:
+        "Complete body massage with premium oils for total relaxation and rejuvenation.",
+      benefits: [
+        "Smooth, Clean Finish",
+        "Pre & Post-Shave Skincare",
+        "Relaxation + Stress Relief",
+        "Improves Skin Texture",
+      ],
+    },
   ];
 
   const categories = [
@@ -216,14 +232,14 @@ export default function Services() {
               <p>
                 Welcome to the Ultimate Spa Experience at Wishash Spa in Dubai &
                 Abu Dhabi. Step into the serene world of Wishash Spa, where
-                elegance meets wellness across our premier locations in Dubai and
-                Abu Dhabi.
+                elegance meets wellness across our premier locations in Dubai
+                and Abu Dhabi.
               </p>
               <p>
                 Our team of professional therapists is trained in both
                 time-honored and contemporary massage techniques, ensuring a
-                deeply revitalizing experience that caters to your body, mind, and
-                spirit.
+                deeply revitalizing experience that caters to your body, mind,
+                and spirit.
               </p>
               <div className="intro-stats">
                 <div className="stat">
@@ -241,13 +257,7 @@ export default function Services() {
               </div>
             </div>
             <div className="intro-video">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="promo-video"
-              >
+              <video autoPlay muted loop playsInline className="promo-video">
                 <source src="/videos/vid1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -306,8 +316,8 @@ export default function Services() {
           <div className="cta-content">
             <h2>Ready to Experience Ultimate Relaxation?</h2>
             <p>
-              Book your appointment today and discover why Wishash Spa is Dubai's
-              premier wellness destination
+              Book your appointment today and discover why Wishash Spa is
+              Dubai's premier wellness destination
             </p>
             <div className="cta-buttons">
               <Link to="/contact-us" className="cta-primary">

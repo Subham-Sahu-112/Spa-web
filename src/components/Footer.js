@@ -45,9 +45,9 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-             <i class="fa-brands fa-snapchat"></i>
+              <i class="fa-brands fa-snapchat"></i>
             </a>
-            
+
             <a
               href="https://wa.me/971556106417"
               className="social-link"
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="footer-column">
+        <div className="footer-column nv">
           <h3>Quick Links</h3>
           <ul className="footer-links">
             <li>
@@ -80,66 +80,53 @@ export default function Footer() {
         </div>
 
         {/* Services */}
-        <div className="footer-column">
-          <h3>Popular Treatments</h3>
-          <ul className="footer-links">
-            <li>
-              <Link to="/services">
-                Aromatherapy Treatment
-              </Link>
-            </li>
-            <li>
-              <Link to="/services">
-                Hot Oil Massage
-              </Link>
-            </li>
-            <li>
-              <Link to="/services">
-                Full Body Massage
-              </Link>
-            </li>
-            <li>
-              <Link to="/services">
-                Deep Tissue Massage
-              </Link>
-            </li>
-            <li>
-              <Link to="/services">
-                Thai Massage
-              </Link>
-            </li>
-            <li>
-              <Link to="/services">
-                Couple Massage
-              </Link>
-            </li>
-          </ul>
+        <div className="footer-column serv-par">
+          <h3>Our Services</h3>
+          <div className="serv">
+            <ul className="footer-links">
+              <li>
+                <Link to="/services">Aromatherapy Treatment</Link>
+              </li>
+              <li>
+                <Link to="/services">Hot Oil Massage</Link>
+              </li>
+              <li>
+                <Link to="/services">Full Body Massage</Link>
+              </li>
+              <li>
+                <Link to="/services">Deep Tissue Massage</Link>
+              </li>
+              <li>
+                <Link to="/services">Thai Massage</Link>
+              </li>
+              <li>
+                <Link to="/services">Couple Massage</Link>
+              </li>
+            </ul>
+            <ul className="footer-links">
+              <li>
+                <Link to="/services">Four Hands Massage</Link>
+              </li>
+              <li>
+                <Link to="/services">Moroccan Bath</Link>
+              </li>
+              <li>
+                <Link to="/services">Jacuzzi Bath</Link>
+              </li>
+              <li>
+                <Link to="/services">Shaving</Link>
+              </li>
+              <li>
+                <Link to="/services">Sports Massage</Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Specialized Services */}
-        <div className="footer-column">
+        {/* <div className="footer-column">
           <h3>Signature Services</h3>
-          <ul className="footer-links">
-            <li>
-              <Link to="/services">Four Hands Massage</Link>
-            </li>
-            <li>
-              <Link to="/services">Moroccan Bath</Link>
-            </li>
-            <li>
-              <Link to="/services">Jacuzzi Bath</Link>
-            </li>
-            <li>
-              <Link to="/services">Reflexology</Link>
-            </li>
-            <li>
-              <Link to="/services">Sports Massage</Link>
-            </li>
-            <li>
-              <Link to="/services">Prenatal Massage</Link>
-            </li>
-          </ul>
-        </div>
+        </div> */}
 
         {/* Contact Info */}
         <div className="footer-column">

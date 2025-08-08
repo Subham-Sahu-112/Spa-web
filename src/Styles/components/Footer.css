@@ -95,9 +95,27 @@
 }
 
 /* Footer Columns */
+.nv {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
 .footer-column {
   display: flex;
   flex-direction: column;
+}
+
+.serv-par {
+  width: 500px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.serv {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .footer-column h3 {
@@ -330,11 +348,20 @@
   .footer-container {
     grid-template-columns: 1fr;
     gap: 2rem;
+    justify-content: center;
     padding: 2rem 0.5rem 1rem;
   }
   
   .footer-social {
     justify-content: center;
+  }
+
+  .footer-description {
+    width: 70%;
+  }
+
+  .nv {
+    width: 100%;
   }
   
   .social-link {
