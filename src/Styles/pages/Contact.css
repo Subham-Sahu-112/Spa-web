@@ -70,7 +70,7 @@
 .contact-info-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .contact-card {
@@ -101,9 +101,10 @@
 
 .card-header {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  /* gap: 1rem; */
+  margin-bottom: 1.2rem;
 }
 
 .card-icon {

@@ -1,541 +1,550 @@
 .discount {
-    background-color: rgb(245, 245, 245);
-    margin-top: -16.8rem;
-    padding-bottom: 5rem;
+  background-color: rgb(245, 245, 245);
+  margin-top: -16.8rem;
+  padding-bottom: 5rem;
 }
 
 .disc-msg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    padding-top: 3rem;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .disc-msg h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .disc-msg p {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.05rem;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+  text-align: center;
 }
 
 .card-1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card-1 span {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card-1 span img {
-    border-radius: 2rem;
-    height: 250px;
-    transition: 0.3s ease;
-    cursor: pointer;
+  border-radius: 2rem;
+  height: 250px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .card-1 span img:hover {
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
-    transform: scale(1.05);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 
 .card-1 span p {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .card-2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card-2 span {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card-2 span img {
-    border-radius: 2rem;
-    height: 250px;
-    transition: 0.3s ease;
-    cursor: pointer;
+  border-radius: 2rem;
+  height: 250px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .card-2 span img:hover {
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
-    transform: scale(1.05);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 
 .card-2 span p {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .card-2 .rus {
-    height: 300px;
+  height: 300px;
 }
 
 .staff-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 4rem 1rem;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    margin-top: -10rem;
-    /* Remove the problematic negative margin */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 1rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .staff-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    transparent
+  );
 }
 
 .staff-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Header Section */
 .staff-header {
-    text-align: center;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .staff-header h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(2rem, 4vw, 2.8rem);
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 1rem;
-    position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .staff-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 3px;
-    background: linear-gradient(90deg, #f0c14b, #d4a843);
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #f0c14b, #d4a843);
+  border-radius: 2px;
 }
 
 .staff-header p {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    color: #666;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Staff Grid */
 .staff-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .staff-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(240, 193, 75, 0.2);
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(240, 193, 75, 0.2);
 }
 
 .staff-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    border-color: rgba(240, 193, 75, 0.5);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border-color: rgba(240, 193, 75, 0.5);
 }
 
 .staff-image-container {
-    position: relative;
-    overflow: hidden;
-    height: 280px;
+  position: relative;
+  overflow: hidden;
+  height: 280px;
 }
 
 .staff-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .staff-card:hover .staff-image-container img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .staff-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.4) 50%,
-        rgba(0, 0, 0, 0.8) 100%
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .staff-card:hover .staff-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .staff-info {
-    text-align: center;
-    color: white;
-    padding: 1.5rem;
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
 }
 
 .staff-card:hover .staff-info {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .staff-info h4 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #f0c14b;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f0c14b;
 }
 
 .staff-info p {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .learn-more-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(240, 193, 75, 0.2);
-    border: 1px solid #f0c14b;
-    color: #f0c14b;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(240, 193, 75, 0.2);
+  border: 1px solid #f0c14b;
+  color: #f0c14b;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .learn-more-btn:hover {
-    background: #f0c14b;
-    color: #333;
-    transform: translateY(-2px);
+  background: #f0c14b;
+  color: #333;
+  transform: translateY(-2px);
 }
 
 .learn-more-btn i {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 /* Staff Details */
 .staff-details {
-    padding: 1.5rem;
-    text-align: center;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 .staff-details h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .staff-specialty {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
-    color: #f0c14b;
-    font-weight: 500;
-    background: rgba(240, 193, 75, 0.1);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #f0c14b;
+  font-weight: 500;
+  background: rgba(240, 193, 75, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  display: inline-block;
 }
 
 /* Call to Action */
 .staff-cta {
-    text-align: center;
-    background: linear-gradient(135deg, #333 0%, #555 100%);
-    color: white;
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+  text-align: center;
+  background: linear-gradient(135deg, #333 0%, #555 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .staff-cta::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent, rgba(240, 193, 75, 0.1), transparent);
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(240, 193, 75, 0.1),
+    transparent
+  );
+  pointer-events: none;
 }
 
 .staff-cta h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #f0c14b;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f0c14b;
 }
 
 .staff-cta p {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.1rem);
-    margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .book-therapist-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    background: linear-gradient(45deg, #f0c14b, #d4a843);
-    color: #333;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 5px 20px rgba(240, 193, 75, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: linear-gradient(45deg, #f0c14b, #d4a843);
+  color: #333;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 20px rgba(240, 193, 75, 0.3);
 }
 
 .book-therapist-btn:hover {
-    background: transparent;
-    color: #f0c14b;
-    border: 2px solid #f0c14b;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(240, 193, 75, 0.4);
+  background: transparent;
+  color: #f0c14b;
+  border: 2px solid #f0c14b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(240, 193, 75, 0.4);
 }
 
 .book-therapist-btn i {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .book-therapist-btn:hover i {
-    transform: translateX(3px);
+  transform: translateX(3px);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .staff-section {
-        padding: 3rem 0.5rem;
-    }
-    
-    .staff-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.5rem;
-    }
-    
-    .staff-image-container {
-        height: 250px;
-    }
-    
-    .staff-cta {
-        padding: 2.5rem 1.5rem;
-    }
+  .staff-section {
+    padding: 3rem 0.5rem;
+  }
+
+  .staff-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .staff-image-container {
+    height: 250px;
+  }
+
+  .staff-cta {
+    padding: 2.5rem 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .staff-section {
-        padding: 2.5rem 0.5rem;
-    }
-    
-    .staff-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.2rem;
-    }
-    
-    .staff-image-container {
-        height: 220px;
-    }
-    
-    .staff-details {
-        padding: 1.2rem;
-    }
-    
-    .staff-cta {
-        padding: 2rem 1rem;
-        border-radius: 15px;
-    }
-    
-    .book-therapist-btn {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
-    }
+  .staff-section {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .staff-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .staff-image-container {
+    height: 220px;
+  }
+
+  .staff-details {
+    padding: 1.2rem;
+  }
+
+  .staff-cta {
+    padding: 2rem 1rem;
+    border-radius: 15px;
+  }
+
+  .book-therapist-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .staff-section {
-        padding: 2rem 0.5rem;
-        /* Fix: Remove problematic width and use proper container */
-        width: 100%;
-        max-width: 100vw;
-        box-sizing: border-box;
-    }
-    
-    .staff-container {
-        padding: 0 0.5rem;
-    }
-    
-    .staff-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-    
-    .staff-card {
-        border-radius: 10px;
-    }
-    
-    .staff-image-container {
-        height: 180px;
-    }
-    
-    .staff-details {
-        padding: 1rem;
-    }
-    
-    .staff-details h3 {
-        font-size: 1rem;
-    }
-    
-    .staff-specialty {
-        font-size: 0.8rem;
-        padding: 0.2rem 0.6rem;
-    }
-    
-    .staff-info h4 {
-        font-size: 1.1rem;
-    }
-    
-    .staff-info p {
-        font-size: 0.8rem;
-    }
-    
-    .learn-more-btn {
-        font-size: 0.7rem;
-        padding: 0.4rem 0.8rem;
-    }
-    
-    .staff-cta {
-        padding: 1.5rem 0.8rem;
-        border-radius: 10px;
-    }
-    
-    .book-therapist-btn {
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
-        width: 100%;
-        justify-content: center;
-    }
+  .staff-section {
+    padding: 2rem 0.5rem;
+    /* Fix: Remove problematic width and use proper container */
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    /* margin-top: -10rem; */
+  }
+
+  .staff-container {
+    padding: 0 0.5rem;
+  }
+
+  .staff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .staff-card {
+    border-radius: 10px;
+  }
+
+  .staff-image-container {
+    height: 180px;
+  }
+
+  .staff-details {
+    padding: 1rem;
+  }
+
+  .staff-details h3 {
+    font-size: 1rem;
+  }
+
+  .staff-specialty {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .staff-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .staff-info p {
+    font-size: 0.8rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .staff-cta {
+    padding: 1.5rem 0.8rem;
+    border-radius: 10px;
+  }
+
+  .book-therapist-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 360px) {
-    .staff-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .staff-image-container {
-        height: 200px;
-    }
+  .staff-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-image-container {
+    height: 200px;
+  }
 }
 
 /* Animation for staff cards */
 @media (prefers-reduced-motion: no-preference) {
-    .staff-card {
-        animation: fadeInUp 0.6s ease-out;
+  .staff-card {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .staff-card:nth-child(odd) {
+    animation-delay: 0.1s;
+  }
+
+  .staff-card:nth-child(even) {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
     }
-    
-    .staff-card:nth-child(odd) {
-        animation-delay: 0.1s;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-    
-    .staff-card:nth-child(even) {
-        animation-delay: 0.2s;
-    }
-    
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+  }
 }
 
 /* High contrast mode */
 @media (prefers-contrast: high) {
-    .staff-section {
-        background: #fff;
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
-    }
-    
-    .staff-card {
-        border: 2px solid #333;
-    }
-    
-    .staff-cta {
-        background: #000;
-        border: 2px solid #fff;
-    }
+  .staff-section {
+    background: #fff;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  .staff-card {
+    border: 2px solid #333;
+  }
+
+  .staff-cta {
+    background: #000;
+    border: 2px solid #fff;
+  }
 }
