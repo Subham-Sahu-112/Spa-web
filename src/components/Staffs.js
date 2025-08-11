@@ -34,6 +34,7 @@ export default function Staffs() {
             <div key={index} className="staff-card">
               <div className="staff-image-container">
                 <img src={staff.image} alt={`${staff.nationality} therapist`} />
+                <span className='blurs'></span>
                 <div className="staff-overlay">
                   <div className="staff-info">
                     <h4>{staff.nationality}</h4>
