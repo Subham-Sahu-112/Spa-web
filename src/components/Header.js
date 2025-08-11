@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+// import "../Styles/components/Book-now.css";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -16,30 +17,30 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Prevent body scroll when menu is open
   useEffect(() => {
     if (showMobileMenu) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
-    
+
     // Cleanup on unmount
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [showMobileMenu]);
 
   const toggleMobileMenu = () => {
     if (isAnimating) return;
-    
+
     setIsAnimating(true);
     setShowMobileMenu(!showMobileMenu);
-    
+
     // Reset animation lock after animation completes
     setTimeout(() => {
       setIsAnimating(false);
@@ -48,22 +49,22 @@ export default function Header() {
 
   const closeMobileMenu = () => {
     if (isAnimating) return;
-    
+
     setIsAnimating(true);
     setShowMobileMenu(false);
-    
+
     setTimeout(() => {
       setIsAnimating(false);
     }, 600);
   };
 
   const handleLogoClick = () => {
-    navigate('/');
+    navigate("/");
     closeMobileMenu();
   };
 
   const handleBackdropClick = (e) => {
-    if (e.target.classList.contains('mobile-menu-backdrop')) {
+    if (e.target.classList.contains("mobile-menu-backdrop")) {
       closeMobileMenu();
     }
   };
@@ -76,6 +77,16 @@ export default function Header() {
     }, 150);
   };
 
+  const whatsappNumber = "971556106417";
+
+  const handleQuickWhatsApp = () => {
+    const quickMessage = encodeURIComponent(
+      "Hello! I'm interested in booking a spa appointment at Wishah Spa. Could you please help me with the available services and time slots?"
+    );
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${quickMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <>
       <nav className="header">
@@ -84,10 +95,10 @@ export default function Header() {
         </div>
         <div className="header-link">
           {isMobile ? (
-            <button 
-              onClick={toggleMobileMenu} 
-              className={`hamburger-menu ${showMobileMenu ? 'active' : ''}`}
-              aria-label={showMobileMenu ? 'Close menu' : 'Open menu'}
+            <button
+              onClick={toggleMobileMenu}
+              className={`hamburger-menu ${showMobileMenu ? "active" : ""}`}
+              aria-label={showMobileMenu ? "Close menu" : "Open menu"}
               aria-expanded={showMobileMenu}
             >
               <div className="hamburger-box">
@@ -127,12 +138,22 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMobile && (
-        <div className={`mobile-menu-backdrop ${showMobileMenu ? 'show' : ''}`} onClick={handleBackdropClick}>
-          <div className={`mobile-menu ${showMobileMenu ? 'mobile-menu-open' : ''}`}>
+        <div
+          className={`mobile-menu-backdrop ${showMobileMenu ? "show" : ""}`}
+          onClick={handleBackdropClick}
+        >
+          <div
+            className={`mobile-menu ${
+              showMobileMenu ? "mobile-menu-open" : ""
+            }`}
+          >
             <div className="mobile-menu-header">
-              <div className="menu-title">
-              </div>
-              <button onClick={closeMobileMenu} className="close-btn" aria-label="Close menu">
+              <div className="menu-title"></div>
+              <button
+                onClick={closeMobileMenu}
+                className="close-btn"
+                aria-label="Close menu"
+              >
                 <div className="close-icon">
                   <span></span>
                   <span></span>
@@ -140,10 +161,10 @@ export default function Header() {
               </button>
             </div>
             <nav className="mobile-menu-nav">
-              <div 
-                className="mobile-menu-item" 
-                style={{'--delay': '0.1s'}}
-                onClick={() => handleMenuItemClick(() => navigate('/'))}
+              <div
+                className="mobile-menu-item"
+                style={{ "--delay": "0.1s" }}
+                onClick={() => handleMenuItemClick(() => navigate("/"))}
               >
                 <div className="menu-item-content">
                   <div className="menu-icon">
@@ -156,11 +177,11 @@ export default function Header() {
                 </div>
                 <div className="ripple"></div>
               </div>
-              
-              <div 
-                className="mobile-menu-item" 
-                style={{'--delay': '0.15s'}}
-                onClick={() => handleMenuItemClick(() => navigate('/services'))}
+
+              <div
+                className="mobile-menu-item"
+                style={{ "--delay": "0.15s" }}
+                onClick={() => handleMenuItemClick(() => navigate("/services"))}
               >
                 <div className="menu-item-content">
                   <div className="menu-icon">
@@ -173,11 +194,11 @@ export default function Header() {
                 </div>
                 <div className="ripple"></div>
               </div>
-              
-              <div 
-                className="mobile-menu-item" 
-                style={{'--delay': '0.25s'}}
-                onClick={() => handleMenuItemClick(() => navigate('/about-us'))}
+
+              <div
+                className="mobile-menu-item"
+                style={{ "--delay": "0.25s" }}
+                onClick={() => handleMenuItemClick(() => navigate("/about-us"))}
               >
                 <div className="menu-item-content">
                   <div className="menu-icon">
@@ -190,11 +211,13 @@ export default function Header() {
                 </div>
                 <div className="ripple"></div>
               </div>
-              
-              <div 
-                className="mobile-menu-item" 
-                style={{'--delay': '0.3s'}}
-                onClick={() => handleMenuItemClick(() => navigate('/contact-us'))}
+
+              <div
+                className="mobile-menu-item"
+                style={{ "--delay": "0.3s" }}
+                onClick={() =>
+                  handleMenuItemClick(() => navigate("/contact-us"))
+                }
               >
                 <div className="menu-item-content">
                   <div className="menu-icon">
@@ -208,7 +231,7 @@ export default function Header() {
                 <div className="ripple"></div>
               </div>
             </nav>
-            
+
             <div className="menu-footer">
               <div className="menu-footer-content">
                 <p>Premium Spa Experience</p>

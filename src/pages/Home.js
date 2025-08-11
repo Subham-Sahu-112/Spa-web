@@ -7,31 +7,17 @@ import Hero from "../components/Hero";
 import Message from "../components/Message";
 import "../Styles/components/Header.css";
 import HomeService from "../components/Home-service";
-import BookNow from "../components/Book-now";
-import '../Styles/components/Book-now.css';
 
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <Header />
-        <span
-          onClick={() => handleQuickWhatsApp()}
-          className="book-now-btn span-btn"
-        >
-          Book Now
-        </span>
-        <span
-          onClick={() => handleQuickWhatsApp()}
-          className="book-whatsapp-link"
-        >
-          <i className="fab fa-whatsapp"></i>
-        </span>
       <Hero />
       <Message />
       <Award />
       <HomeService />
       <Staffs />
       <Footer />
-    </>
+    </div>
   );
 }
