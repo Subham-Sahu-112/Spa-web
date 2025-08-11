@@ -64,11 +64,12 @@
 }
 
 .message-box a {
+  border: none;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: white;
-  background-color: #333;
+  background-color: transparent;
   padding: 1rem 2.5rem;
   text-decoration: none;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
@@ -76,12 +77,6 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-top: 1rem;
-}
-
-.message-box a:hover {
-  background-color: #555;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .msg-img {
@@ -98,6 +93,38 @@
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.discover-more-link {
+  background-color: none;
+}
+
+.discover-more-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background: linear-gradient(45deg, #f0c14b, #d4a843);
+  color: #333;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.discover-more-btn:hover {
+  background: transparent;
+  color: #f0c14b;
+  border: 2px solid #f0c14b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(240, 193, 75, 0.3);
 }
 
 /* Tablet Styles */
@@ -198,6 +225,7 @@
   }
 
   .message-box p {
+    font-size: 1.2rem;
     margin-bottom: 0.8rem;
     padding: 0 0.25rem;
   }

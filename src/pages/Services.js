@@ -136,6 +136,9 @@ export default function Services() {
         "Stress relief",
       ],
     },
+  ];
+
+  const service2 = [
     {
       id: 9,
       name: "Full Body Oil Massage",
@@ -168,45 +171,22 @@ export default function Services() {
         "Improves Skin Texture",
       ],
     },
-  ];
-
-  const categories = [
-    {
-      id: "all",
-      name: "All Services",
-      count: services.length,
-    },
-    {
-      id: "signature",
-      name: "Signature",
-      count: services.filter((s) => s.category === "signature").length,
-    },
-    {
-      id: "luxury",
-      name: "Luxury",
-      count: services.filter((s) => s.category === "luxury").length,
-    },
-    {
-      id: "therapeutic",
-      name: "Therapeutic",
-      count: services.filter((s) => s.category === "therapeutic").length,
-    },
-    {
-      id: "traditional",
-      name: "Traditional",
-      count: services.filter((s) => s.category === "traditional").length,
-    },
-    {
-      id: "wellness",
-      name: "Wellness",
-      count: services.filter((s) => s.category === "wellness").length,
-    },
-  ];
+  ]
 
   const filteredServices =
     activeCategory === "all"
       ? services
       : services.filter((service) => service.category === activeCategory);
+
+  const whatsappNumber = "971556106417";
+
+  const handleQuickWhatsApp = () => {
+    const quickMessage = encodeURIComponent(
+      "Hello! I'm interested in booking a spa appointment at Wishah Spa. Could you please help me with the available services and time slots?"
+    );
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${quickMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="services-page">
@@ -218,7 +198,7 @@ export default function Services() {
           <h1>Our Premium Spa Services</h1>
           <p>
             Experience the finest therapeutic treatments designed to rejuvenate
-            your body, mind, and spirit at Wishash Spa
+            your body, mind, and spirit at Wishah Spa
           </p>
         </div>
       </section>
@@ -230,10 +210,9 @@ export default function Services() {
             <div className="intro-text">
               <h2>Welcome to Premier Spa Experience</h2>
               <p>
-                Welcome to the Ultimate Spa Experience at Wishash Spa in Dubai &
-                Abu Dhabi. Step into the serene world of Wishash Spa, where
-                elegance meets wellness across our premier locations in Dubai
-                and Abu Dhabi.
+                Welcome to the Ultimate Spa Experience at Wishah Spa in Dubai.
+                Step into the serene world of Wishah Spa, where elegance meets
+                wellness across our premier locations in Dubai.
               </p>
               <p>
                 Our team of professional therapists is trained in both
@@ -299,10 +278,39 @@ export default function Services() {
                     <h3>{service.name}</h3>
                   </div>
                   <p className="description">{service.description}</p>
-                  <Link to="/contact-us" className="book-btn">
+                  <span className="book-btn" onClick={() => handleQuickWhatsApp()}>
                     <i className="fas fa-calendar-alt"></i>
                     Book Now
-                  </Link>
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="services-grid service2-grid">
+            {service2.map((service) => (
+              <div key={service.id} className="service-card">
+                <div className="card-image">
+                  <img src={service.image} alt={service.name} />
+                  <div className="card-overlay">
+                    <div className="overlay-content">
+                      <h4>Benefits</h4>
+                      <ul>
+                        {service.benefits.map((benefit, index) => (
+                          <li key={index}>{benefit}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-content">
+                  <div className="card-header">
+                    <h3>{service.name}</h3>
+                  </div>
+                  <p className="description">{service.description}</p>
+                  <span className="book-btn" onClick={() => handleQuickWhatsApp()}>
+                    <i className="fas fa-calendar-alt"></i>
+                    Book Now
+                  </span>
                 </div>
               </div>
             ))}
@@ -316,23 +324,23 @@ export default function Services() {
           <div className="cta-content">
             <h2>Ready to Experience Ultimate Relaxation?</h2>
             <p>
-              Book your appointment today and discover why Wishash Spa is
-              Dubai's premier wellness destination
+              Book your appointment today and discover why Wishah Spa is Dubai's
+              premier wellness destination
             </p>
             <div className="cta-buttons">
-              <Link to="/contact-us" className="cta-primary">
+              <span onClick={() => handleQuickWhatsApp()} className="cta-primary">
                 <i className="fas fa-calendar-alt"></i>
                 Book Appointment
-              </Link>
-              <a
-                href="https://wa.me/971556106417"
+              </span>
+              <Link
+                to="https://wa.me/971556106417"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-secondary"
               >
                 <i className="fab fa-whatsapp"></i>
                 WhatsApp Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

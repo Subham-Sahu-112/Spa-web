@@ -2,13 +2,14 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
 }
 
 /* Hero Section */
 .contact-hero {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   color: white;
-  padding: 8rem 2rem 4rem;
+  padding: 4rem 2rem 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -54,15 +55,16 @@
 
 /* Main Content */
 .contact-main {
-  padding: 4rem 1rem;
+  padding: 4rem 0rem;
+  /* padding-bottom: 15rem; */
 }
 
 .contact-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+  gap: 1.5rem;
   align-items: start;
 }
 
@@ -97,6 +99,11 @@
 .contact-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hours-card {
+  position: absolute;
+  left: 36.4%;
 }
 
 .card-header {
@@ -300,8 +307,18 @@
   color: #22c55e;
 }
 
+/* Map */
+.map-section {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
 /* Form Section */
 .contact-form-section {
+  position: absolute;
+  right: 6%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
 }
@@ -309,7 +326,7 @@
 .form-card {
   background: white;
   border-radius: 20px;
-  padding: 2.5rem;
+  padding: 2rem 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(37, 211, 102, 0.2);
   position: relative;
@@ -328,20 +345,21 @@
 
 .form-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .form-header h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #333;
   margin-bottom: 1rem;
 }
 
 .form-header p {
+  width: 83%;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666;
   line-height: 1.6;
   max-width: 500px;
@@ -367,145 +385,6 @@
   font-size: 1rem;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.form-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.section-title {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(37, 211, 102, 0.3);
-}
-
-.section-title i {
-  color: #25d366;
-  font-size: 1.1rem;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form-group label {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 1rem;
-  border: 2px solid rgba(37, 211, 102, 0.2);
-  border-radius: 12px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  background: rgba(248, 249, 250, 0.5);
-  transition: all 0.3s ease;
-  resize: vertical;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #25d366;
-  background: white;
-  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #999;
-}
-
-/* Custom Dropdown */
-.custom-dropdown {
-  position: relative;
-}
-
-.dropdown-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border: 2px solid rgba(37, 211, 102, 0.2);
-  border-radius: 12px;
-  background: rgba(248, 249, 250, 0.5);
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.dropdown-header:hover {
-  border-color: #25d366;
-  background: white;
-}
-
-.dropdown-header i {
-  transition: transform 0.3s ease;
-  color: #25d366;
-}
-
-.dropdown-header i.rotate {
-  transform: rotate(180deg);
-}
-
-.dropdown-options {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: white;
-  border: 2px solid #25d366;
-  border-top: none;
-  border-radius: 0 0 12px 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.dropdown-option {
-  padding: 1rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  border-bottom: 1px solid rgba(37, 211, 102, 0.1);
-}
-
-.dropdown-option:hover {
-  background: rgba(37, 211, 102, 0.1);
-}
-
-.dropdown-option:last-child {
-  border-bottom: none;
-}
-
 /* Form Actions */
 .form-actions {
   display: flex;
@@ -522,10 +401,10 @@
   background: linear-gradient(45deg, #25d366, #20ba5a);
   color: white;
   border: none;
-  padding: 1.2rem 3rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -552,17 +431,21 @@
 }
 
 .whatsapp-note {
+  width: 80%;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.3rem;
   font-family: "Poppins", sans-serif;
   font-size: 0.85rem;
   color: #666;
   text-align: center;
   margin: 0;
+  margin-top: 0.5rem;
 }
 
 .whatsapp-note i {
+  margin-top: 0.3rem;
   color: #25d366;
 }
 
@@ -641,6 +524,16 @@
   
   .form-header h2 {
     font-size: 1.5rem;
+  }
+
+  .hours-card {
+    position: relative;
+    left: 0;
+  }
+
+  .contact-form-section {
+    position: relative;
+    left: 0;
   }
   
   .submit-btn.whatsapp-submit {

@@ -290,6 +290,31 @@
   margin-bottom: 0.5rem;
 }
 
+.book-from-staff {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(45deg, #f0c14b, #d4a843);
+  color: #333;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.6rem 2.5rem;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 20px rgba(240, 193, 75, 0.3);
+}
+
+.book-from-staff:hover {
+  background: transparent;
+  color: #f0c14b;
+  border: 2px solid #f0c14b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(240, 193, 75, 0.4);
+}
+
 .staff-specialty {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
@@ -462,6 +487,10 @@
 
   .staff-details h3 {
     font-size: 1rem;
+  }
+
+  .book-from-staff {
+    padding: 0.5rem 2rem;
   }
 
   .staff-specialty {

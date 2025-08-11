@@ -64,7 +64,7 @@
 }
 
 .intro-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -138,10 +138,11 @@
 .services-section {
   background: white;
   padding: 4rem 1rem;
+  padding-top: 0;
 }
 
 .services-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -221,8 +222,14 @@
 /* Services Grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service2-grid {
+  max-width: 1000px;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 

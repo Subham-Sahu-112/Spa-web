@@ -115,7 +115,7 @@
   font-weight: 400;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.4);
   line-height: 1.4;
-  max-width: 800px;
+  max-width: 900px;
   animation: slideInFromTop 1s ease-out 0.4s both;
 }
 
@@ -303,7 +303,7 @@
   }
 
   .hero-text .txt-1 {
-    font-size: 4.5rem;
+    font-size: 2.8rem;
   }
 
   .hero-text .txt-2 {

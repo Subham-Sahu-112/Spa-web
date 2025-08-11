@@ -13,6 +13,14 @@ export default function Staffs() {
     { image: "/images/Russian.jpg", nationality: "Russian", speciality: "Sports Massage" }
   ];
 
+  const whatsappNumber = "971556106417";
+
+  const handleQuickWhatsApp = () => {
+    const quickMessage = encodeURIComponent("Hello! I'm interested in booking a spa appointment at Wishash Spa. Could you please help me with the available services and time slots?");
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${quickMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section className='staff-section'>
       <div className="staff-container">
@@ -39,6 +47,7 @@ export default function Staffs() {
               </div>
               <div className="staff-details">
                 <h3>{staff.nationality} Therapist</h3>
+                <span onClick={() => handleQuickWhatsApp()} className='book-from-staff'>Book Now</span>
               </div>
             </div>
           ))}

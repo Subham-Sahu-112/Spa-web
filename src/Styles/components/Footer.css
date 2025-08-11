@@ -388,6 +388,31 @@
   .contact-item {
     justify-content: center;
     text-align: center;
+    gap: 0.5rem;
+    margin-left: 3rem;
+  }
+
+  .contact-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .contact-item div .address {
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foot-call {
+    margin-left: -1rem;
+  }
+
+  .foot-hours {
+    align-self: flex-start;
+    margin-left: 15rem
   }
   
   .footer-bottom-links {

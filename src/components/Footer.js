@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer-logo">
             <img src="/images/logo.png" alt="Wishash Spa Logo" />
           </div>
-          <h2 className="footer-title">Wishash Spa</h2>
+          <h2 className="footer-title">Wishah Spa</h2>
           <p className="footer-description">
             Experience the ultimate relaxation and wellness at Dubai's premier
             spa. Our expert therapists provide authentic massage treatments that
@@ -138,20 +138,20 @@ export default function Footer() {
                 <p>
                   <strong>Dubai Location</strong>
                 </p>
-                <p>
-                  SHOP #6. GROUND FLOOR,
-                  <br />
-                  THE METROPOLIS TOWER,
-                  <br />
-                  NEAR BURJ KHALIFA,
-                  <br />
-                  BUSINESS DAY,
-                  <br />
-                  DOWNTOWN DUBAI
+                <p className="address">
+                  <span>SHOP #6. GROUND FLOOR,</span>
+                  {/* <br style={{marginLeft: '-1rem'}} /> */}
+                  <span>THE METROPOLIS TOWER,</span>
+                  <span>NEAR BURJ KHALIFA,</span>
+                  <span>BUSINESS BAY,</span>
+                  <span>DOWNTOWN DUBAI</span>
+                  
+                  {/* <br /> */}
+                  
                 </p>
               </div>
             </div>
-            <div className="contact-item">
+            <div className="contact-item foot-call">
               <i className="fas fa-phone"></i>
               <div>
                 <p>
@@ -169,7 +169,7 @@ export default function Footer() {
                 <p>wishahspa1@gmail.com</p>
               </div>
             </div>
-            <div className="contact-item">
+            <div className="contact-item foot-hours">
               <i className="fas fa-clock"></i>
               <div>
                 <p>
@@ -186,7 +186,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="footer-bottom-container">
           <div className="footer-bottom-left">
-            <p>&copy; {currentYear} Wishash Spa. All rights reserved.</p>
+            <p>&copy; {currentYear} Wishah Spa. All rights reserved.</p>
             <div className="footer-bottom-links">
               <a href="#privacy">Privacy Policy</a>
               <a href="#terms">Terms of Service</a>

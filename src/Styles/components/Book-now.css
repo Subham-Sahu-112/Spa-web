@@ -1,0 +1,30 @@
+.span-btn {
+    transform: rotate(270deg);
+    margin-left: -3.4rem;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    cursor: pointer;
+}
+
+.span-btn:hover {
+    transform: rotate(270deg);
+    background-color: transparent;
+}
+
+.book-whatsapp-link {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: white;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 999;
+    cursor: pointer;
+}
