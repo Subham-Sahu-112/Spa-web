@@ -40,7 +40,7 @@ export default function Message() {
       </div>
       <div className="msg-img">
         {/* eslint-disable-next-line jsx-a11y/alt-text */}
-        <img src="/images/Interior.jpg" alt="Spa interior" />
+        <img src="/images/interior.jpg" alt="Spa interior" />
       </div>
     </div>
   );

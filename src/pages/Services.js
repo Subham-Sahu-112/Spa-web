@@ -171,7 +171,7 @@ export default function Services() {
         "Improves Skin Texture",
       ],
     },
-  ]
+  ];
 
   const filteredServices =
     activeCategory === "all"
@@ -257,7 +257,7 @@ export default function Services() {
           </div>
 
           {/* Services Grid */}
-          <div className="services-grid">
+          {/* <div className="services-grid">
             {filteredServices.map((service) => (
               <div key={service.id} className="service-card">
                 <div className="card-image">
@@ -314,6 +314,337 @@ export default function Services() {
                 </div>
               </div>
             ))}
+          </div> */}
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa1.png" alt="Moroccan Bath With Massage" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Deep cleansing</li>
+                      <li>Skin exfoliation</li>
+                      <li>Stress relief</li>
+                      <li>Improved circulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Moroccan Bath With Massage</h3>
+                </div>
+                <p className="description ist">
+                  Traditional Moroccan cleansing ritual combined with relaxing
+                  massage for ultimate purification and relaxation.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa2.png" alt="Couple Massages" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Bonding experience</li>
+                      <li>Stress relief</li>
+                      <li>Quality time</li>
+                      <li>Romantic atmosphere</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Couple Massages</h3>
+                </div>
+                <p className="description">
+                  Share a relaxing experience with your partner in our luxurious
+                  couples massage suite.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa3.png" alt="Jacuzzi Bath With Massage" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Muscle relaxation</li>
+                      <li>Stress relief</li>
+                      <li>Improved circulation</li>
+                      <li>Luxury experience</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Jacuzzi Bath With Massage</h3>
+                </div>
+                <p className="description">
+                  Indulge in a warm jacuzzi bath followed by a soothing
+                  full-body massage.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa4.png" alt="Aromatherapy Treatment" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Mental clarity</li>
+                      <li>Emotional balance</li>
+                      <li>Improved circulation</li>
+                      <li>Improved sleep</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Aromatherapy Treatment</h3>
+                </div>
+                <p className="description">
+                  Therapeutic massage using essential oils to balance mind,
+                  body, and spirit.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa5.png" alt="Deep Tissue Massage" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Pain relief</li>
+                      <li>Muscle recovery</li>
+                      <li>Improved mobility</li>
+                      <li>Tension release</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Deep Tissue Massage</h3>
+                </div>
+                <p className="description">
+                  Intensive massage targeting deep muscle layers to relieve
+                  chronic pain and tension.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/sppa7.jpg" alt="Thai Massage" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Flexibility improvement</li>
+                      <li>Energy boost</li>
+                      <li>Pain relief</li>
+                      <li>Mental clarity</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Thai Massage</h3>
+                </div>
+                <p className="description">
+                  Ancient Thai healing technique combining stretching, and
+                  energy work.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa8.webp" alt="Four Hands Massage" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Deep relaxation</li>
+                      <li>Luxury experience</li>
+                      <li>Full body treatment</li>
+                      <li>Luxury experience</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Four Hands Massage</h3>
+                </div>
+                <p className="description">
+                  Ultimate luxury experience with two therapists working in
+                  synchronized harmony.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa6.jpg" alt="Hot Oil Massage" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Skin nourishment</li>
+                      <li>Muscle relaxation</li>
+                      <li>Improved circulation</li>
+                      <li>Improved sleep</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Hot Oil Massage</h3>
+                </div>
+                <p className="description">
+                  Nourishing massage with warm herbal oils to moisturize skin
+                  and relax muscles.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="services-grid service-grid-2">
+            <div className="service-card">
+              <div className="home-service-img">
+                <img
+                  src="/images/full_body_oil_massage.jpg"
+                  alt="Full Body Oil Massage"
+                />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Full body relaxation</li>
+                      <li>Skin hydration</li>
+                      <li>Stress relief</li>
+                      <li>Improved sleep</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Full Body Oil Massage</h3>
+                </div>
+                <p className="description">
+                  Complete body massage with premium oils for total relaxation
+                  and rejuvenation.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="home-service-img">
+                <img src="/images/spa9.jpg" alt="Shaving" />
+                <div className="card-overlay">
+                  <div className="overlay-content">
+                    <h4>Benefits</h4>
+                    <ul>
+                      <li>Smooth, Clean Finish</li>
+                      <li>Pre & Post-Shave Skincare</li>
+                      <li>Relaxation + Stress Relief</li>
+                      <li>Improves Skin Texture</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h3>Shaving</h3>
+                </div>
+                <p className="description">
+                  Complete body massage with premium oils for total relaxation
+                  and rejuvenation.
+                </p>
+                <span
+                  className="book-btn"
+                  onClick={() => handleQuickWhatsApp()}
+                >
+                  <i className="fas fa-calendar-alt"></i>
+                  Book Now
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -328,7 +659,10 @@ export default function Services() {
               premier wellness destination
             </p>
             <div className="cta-buttons">
-              <span onClick={() => handleQuickWhatsApp()} className="cta-primary">
+              <span
+                onClick={() => handleQuickWhatsApp()}
+                className="cta-primary"
+              >
                 <i className="fas fa-calendar-alt"></i>
                 Book Appointment
               </span>
